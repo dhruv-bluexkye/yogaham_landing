@@ -59,7 +59,7 @@ const App: React.FC = () => {
       {/* Navigation */}
       <nav className={`fixed top-0 w-full z-50 px-6 py-4 transition-transform duration-700 ${loaded ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className="max-w-7xl mx-auto flex justify-between items-center bg-surface-light/80 dark:bg-surface-dark/80 backdrop-blur-md px-6 py-3 rounded-full shadow-sm border border-gray-100 dark:border-gray-800 transition-all hover:shadow-md">
-          <a href="#" className="h-6">
+          <a href="#" className="h-4">
             <img 
               src={isDarkMode ? "/assets/logo-light.svg" : "/assets/logo.svg"} 
               alt="Yogaham" 
@@ -81,7 +81,7 @@ const App: React.FC = () => {
               </span>
             </button>
             <button 
-              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" 
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center justify-center" 
               onClick={toggleDarkMode}
             >
               <span className="material-icons-outlined dark:hidden">dark_mode</span>
@@ -339,7 +339,7 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6">
-              <a href="#" className="h-6 inline-block">
+              <a href="#" className="h-4 inline-block">
                 <img 
                   src={isDarkMode ? "/assets/logo-light.svg" : "/assets/logo.svg"} 
                   alt="Yogaham" 
